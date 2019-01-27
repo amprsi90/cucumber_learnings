@@ -6,19 +6,25 @@ Scenario: Checking brand logo and social share icons
 	
 	
 Scenario: Checking functionality of hamburger menu button
-	Given I am on Telegraph home page
+	Given Starting on Telegraph home page
 	When I click on hamburger menu
 	Then I should see 13 sub menu listed
 	
 	
 Scenario: Checking functionality of search button
-	Given I am on Telegraph home page
+	Given Being on Telegraph home page
 	When I click on search button
 	Then I should see search box with placeholder
 
 
 Scenario: Checking navigation from home page main story tile to main story page
-	Given I am on Telegraph home page
+	Given Start from Telegraph home page
 	And I see main story tile
 	When I click on main story tile
 	Then I should see main story page
+
+
+Scenario: Checking date format
+	Given On Telegraph home page
+	And I see date
+	Then I should see today's full date on the header

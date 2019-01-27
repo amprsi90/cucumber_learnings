@@ -1,7 +1,7 @@
 const {Given, Then, When} = require('cucumber');
 const expect = require('chai').expect;
 
-Given('I am on Telegraph home page', function () {
+Given('Starting on Telegraph home page', function () {
 	return this.driver.getTitle()
 		.then(title => expect(title, 'main story text not displayed').to.include('Telegraph India'));
 });
