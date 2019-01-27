@@ -1,0 +1,16 @@
+{
+  "name": "cucumber_task",
+  "version": "1.0.0",
+  "description": "nts task",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "amit",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
